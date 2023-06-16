@@ -1,0 +1,19 @@
+/* descendant selector */
+article p {
+  background-color: yellow;
+}
+
+/* case: child selector */
+article > p {
+  background-color: yellow;
+}
+
+/* adjacent sibling selector */
+article + p {
+  background-color: yellow;
+}
+
+/* general sibling selector */
+article ~ p {
+  background-color: yellow;
+}
