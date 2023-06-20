@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* existence */
+      a[target] {
+        background-color: yellow;
+      }
+      /* equality */
+      a[target="_top"] {
+        background-color: red;
+      }
+      /* space */
+      a[target~="bottom"] {
+        background-color: pink;
+      }
+      /* prefix */
+      a[target^="a"] {
+        background-color: aqua;
+      }
+      /* substring */
+      a[target*="sub"] {
+        background-color: antiquewhite;
+      }
+      /* suffix */
+      a[target*="ix"] {
+        background-color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>CSS [attribute] Selector</h2>
+
+    <a href="https://www.w3schools.com">existence example</a>
+    <a href="http://www.wikipedia.org" target="_top">equality example</a>
+    <a href="http://www.wikipedia.org" target="_top bottom">space example</a>
+    <a href="#" target="a">prefix example</a>
+    <a href="#" target="substring">substring example</a>
+    <a href="#" target="suffix">suffix example</a>
+  </body>
+</html>
